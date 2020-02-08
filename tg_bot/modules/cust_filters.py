@@ -111,7 +111,7 @@ def filters(bot: Bot, update: Update):
         is_sticker = True
 
     elif msg.reply_to_message and msg.reply_to_message.document:
-        content = msg.reply_to_message.document.file_id
+        content = msg.reply_to_message.document.file_id.caption
         is_document = True
 
     elif msg.reply_to_message and msg.reply_to_message.photo:
